@@ -5,6 +5,7 @@
 }
 
 #bg-image {
+    margin-bottom: 150px;
     height: 580px;
     background-image: url(./assets/images/bgimage.jpg);
     background-repeat: no-repeat;
@@ -20,7 +21,6 @@
 .container {
     width: 85%;
     margin: auto;
-    position: relative;
 }
 
 .container .header {
@@ -159,73 +159,77 @@
 }
 
 #about {
-    position: relative;
+    margin-top: 200px;
 }
 
 #about .container .items {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+
+.image {
+    position: relative;
+    width: 100%;
 }
 
 .items .img-1 {
-    position: absolute;
-    height: 80%;
-    width: 38%;
+    width: 70%;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .items .img-2 {
     position: absolute;
-    left: 24%;
+    left: 45%;
     background: #ffffff;
-    height: 61%;
-    padding: 15px;
-    width: 25%;
-    top: 39%;
+    padding: 10px;
+    width: 40%;
+    top: 40%;
     border-radius: 30px;
 }
 
-.items .carousel {
-    position: relative;
-    width: 40%;
-    overflow: hidden;
-    padding: 20px 0px;
-    border-radius: 20px;
+.swiper {
+    width: 60%;
+    height: 100%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 20px;
 }
 
-.carousel .slides {
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
     width: 100%;
     height: 100%;
-    padding: 0px 2px;
-    transition: transform 0.5s ease-in-out;
+    object-fit: cover;
 }
 
-.carousel .slide {
-    width: 520px;
-    height: 100%;
-    position: relative;
-}
-
-.carousel .slide-content {
-    padding: 13px;
-    width: 500px;
+.slide-content {
+    /* padding: 13px; */
+    width: 100%;
     text-align: justify;
 }
 
-.carousel .slide-content h2 {
+.slide-content h2 {
     font-size: 25px;
 }
 
-.carousel .slide-content p {
+.slide-content p {
     font-size: 15px;
     font-weight: 300;
 
 }
 
-.carousel .slide-content .btn-read {
+.slide-content .btn-read {
     border: none;
     cursor: pointer;
     border-radius: 25px;
@@ -235,118 +239,8 @@
     margin: 20px 0px 0px 0px
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgb(231 224 224 / 50%);
-    color: #333;
-    height: 50px;
-    width: 50px;
-    border: none;
-    padding: 6px 0px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-    transition: all 0.3s ease;
-}
-
-.carousel-btn:hover {
-    background: rgba(110, 109, 109, 0.8);
-}
-
-#next-btn {
-    right: 12px;
-}
-
-.indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(113, 111, 111, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.indicator.active {
-    background: rgb(87, 84, 84);
-    transform: scale(1.2);
-}
-
-/* Animation for slides */
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(0);
-    }
-
-    33% {
-        transform: translateX(-100%);
-    }
-
-    58% {
-        transform: translateX(-100%);
-    }
-
-    66% {
-        transform: translateX(-200%);
-    }
-
-    91% {
-        transform: translateX(-200%);
-    }
-
-    100% {
-        transform: translateX(-300%);
-    }
-}
-
-/* Auto-rotate animation */
-.slides {
-    animation: slide 16s infinite;
-}
-
-/* Pause on hover */
-.carousel:hover .slides {
-    animation-play-state: running;
-}
-
-.divide-img img {
-    position: absolute;
-    right: 34em;
-    top: 43em;
-    height: 90px;
-    opacity: 0.3;
-}
-
-.divide-img {
-    height: 250px;
-}
-
-.divide-right {
-    height: 100px;
-}
-
-#about .divide-right img {
-    position: absolute;
-    top: 74%;
-    right: 46%;
-    opacity: 0.3;
-    height: 90px;
+#feature {
+    margin-top: 80px;
 }
 
 .container .heading {
@@ -355,7 +249,7 @@
 }
 
 .container .heading p {
-    width: 60%;
+
     font-size: 16px;
     font-weight: 300;
 }
@@ -443,26 +337,56 @@
     margin: 50px 0px;
 }
 
-#form .slider {
-    position: relative;
-    max-width: 80%;
-    left: 8%;
-    overflow: hidden;
-    padding: 30px 0px;
-}
+#form .container .swiper {
+    width: 90%;
+    height: 100%;
+  }
 
-#form .slider-box {
+  #form .container .swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #form .container .swiper .swiper-slide img {
+    display: block;
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
-}
+    object-fit: cover;
+  }
 
-#form .box {
-    min-width: 100%;
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
     height: 100%;
-    position: relative;
-}
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
 
 .box-content {
     color: #ffffff;
@@ -479,84 +403,6 @@
     font-size: 14px;
     font-weight: 300;
     padding: 0px 30px;
-}
-
-.slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgb(231 224 224 / 50%);
-    color: #333;
-    height: 50px;
-    width: 50px;
-    border: none;
-    padding: 6px 0px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-    transition: all 0.3s ease;
-}
-
-.slider-btn:hover {
-    background: rgba(110, 109, 109, 0.8);
-}
-
-#frwrd-btn {
-    right: 12px;
-}
-
-/* Animation for slides */
-@keyframes box {
-    0% {
-        transform: translateX(0);
-    }
-
-    33% {
-        transform: translateX(-100%);
-    }
-
-    66% {
-        transform: translateX(-200%);
-    }
-
-    99% {
-        transform: translateX(-300%);
-    }
-}
-
-/* Auto-rotate animation */
-.slider-box {
-    animation: slide 12s infinite;
-}
-
-/* Pause on hover */
-.slider:hover .slides {
-    animation-play-state: running;
-}
-
-.slide-indicate {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.slide-indicater {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(117, 154, 100, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.slide-indicater.active {
-    background: rgb(116, 163, 78);
-    transform: scale(1.2);
 }
 
 .detail {
@@ -644,6 +490,7 @@
     gap: 40px;
 }
 
+
 .content-box .left,
 .content-box .right {
     padding: 30px;
@@ -718,6 +565,9 @@
     background-image: linear-gradient(rgb(6 105 17), rgb(29 121 85));
     margin: 40px 0px;
 }
+.video-test {
+    position: relative;
+}
 
 #video .video-test iframe {
     margin: 30px auto;
@@ -752,7 +602,7 @@
     color: rgb(255 255 255);
     position: absolute;
     right: 10%;
-    top: 38%;
+    top: 25%;
     box-shadow: 3px 3px 2px 0px #333;
 }
 

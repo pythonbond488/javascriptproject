@@ -1,10 +1,11 @@
 @media (max-width: 480px) {
     #bg-image {
-        height: 900px;
+        height: 1000px;
     }
 
     #bg-image .bg-color {
-        height: 900px;
+        height: 1025px;
+        margin-bottom: 50px;
 
     }
 
@@ -54,13 +55,13 @@
 
     .hero .hero-right form input {
 
-        width: 40% !important;
+        width: 100% !important;
         margin: 5px 2px !important;
         border-radius: 35px !important;
     }
 
     .hero .hero-right form select {
-        width: 48% !important;
+        width: 100% !important;
     }
 
 
@@ -99,8 +100,8 @@
     }
 
     textarea {
-        height: 40px;
-        width: 90%;
+        height: 50px;
+        width: 100%;
         /* Set a specific height for the textarea */
     }
 
@@ -110,10 +111,11 @@
     }
 
     p {
-        font-size: 0.9em;
+        font-size: 0.9em !important;
         /* Adjust paragraph size for smaller screens */
     }
-  /* this is image and carousel section.....! */
+
+    /* this is image and carousel section.....! */
     #about {
         top: 9em;
     }
@@ -131,8 +133,7 @@
     }
 
     .image .img-1 {
-        width: 97% !important;
-        height: auto !important;
+        width: 90% !important;
         object-fit: cover;
         margin-bottom: 10px;
         background: #149164;
@@ -141,28 +142,17 @@
     }
 
     .image .img-2 {
-        width: 56% !important;
+        width: 50% !important;
         height: auto !important;
         background: #1c6e41;
         object-fit: cover;
         margin-bottom: 10px;
     }
 
-    .carousel {
-        width: 100% !important;
-        height: 400px;
-        top: 23em;
-        padding: 6px !important;
-        margin: 0px -8px;
-    }
-
-    .slides {
-        flex-direction: row;
-        margin: 0px 5px;
-    }
-
-    .slide {
-        width: 100% !important;
+    .swiper {
+        width: 85% !important;
+        margin: 20px 0px;
+        height: 100%;
     }
 
     .slide-content {
@@ -184,30 +174,14 @@
         font-size: 14px;
     }
 
-    .carousel-btn {
-        font-size: 20px;
-        background-color: rgb(175 164 164 / 30%);
-        padding: 5px;
+    #feature {
+        margin-top: 16px;
     }
 
-    .indicators {
-        display: flex;
-        justify-content: center;
-        gap: 6px;
-        margin-top: 10px;
-    }
 
-    .indicator {
-        width: 10px;
-        height: 10px;
-        background-color: #ccc;
-        border-radius: 50%;
-    }
 
-    .indicator.active {
-        background-color: #333;
-    }
-/* this is why choose us section.......! */
+
+    /* this is why choose us section.......! */
     .container {
         padding: 10px;
         text-align: center;
@@ -225,13 +199,13 @@
     }
 
     .heading p {
+        width: 100% !important;
         font-size: 14px;
         line-height: 1.5;
     }
 
     .heading button {
-        font-size: 20px;
-        padding: 5px 10px;
+        display: none;
     }
 
     .feature {
@@ -242,26 +216,157 @@
     }
 
     .feature div {
-        padding: 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
+        background-image: linear-gradient(rgb(6 105 17), rgb(29 121 85));
+        color: #ffffff;
+        width: 85% !important;
+        padding: 30px !important;
     }
 
     .feature h4 {
-        font-size: 18px;
+        font-size: 18px !important;
         margin: 10px 0;
     }
 
     .feature p {
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 1.6;
     }
 
     .feature i {
-        font-size: 24px;
+        font-size: 40px;
         margin-bottom: 10px;
         display: block;
+        color: #ffffff;
     }
+
+    .container .detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .detail input {
+        margin: 13px 0px;
+        width: 85%;
+        padding: 10px 20px 10px 10px;
+        border: 1px solid #ffffff;
+        border-radius: 20px;
+        outline: none;
+        background: transparent;
+    }
+
+    .container .detail button {
+        background-color: #ffffff;
+        margin: 10px 0px;
+        width: 50%;
+        padding: 10px 20px;
+        border: none;
+        color: rgb(29 121 85);
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .banner {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        margin: 40px 0px 0px 0px;
+    }
+
+    .banner .banner1 {
+        padding: 20px;
+        width: 90%;
+        margin: 10px 0px;
+        border-radius: 20px;
+        text-align: center;
+        background: rgb(255, 255, 255);
+    }
+
+    .content-box .left img {
+        background: rgb(56 155 116);
+        border-radius: 40px;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .content-box .left,
+    .content-box .right {
+        position: relative;
+        margin: 20px 0px !important;
+        padding: 0 !important;
+    }
+
+    #testimonial .content-box {
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    #video {
+        margin: 0 !important;
+    }
+
+    #video .video-test iframe {
+        margin: 30px auto;
+        padding: 20px;
+        width: 90%;
+        background-color: rgb(89, 147, 76);
+        border-radius: 20px;
+        box-shadow: 8px 8px 8px 0px #333;
+    }
+
+    .video-test .review {
+        display: none;
+    }
+
+    #faq .container .main {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    #faq {
+        background-color: transparent;
+        padding: 0 !important;
+    }
+
+    .footer .footer-right {
+        display: none;
+    }
+
+    .container .footer .footer-left {
+        width: 100% !important;
+    }
+
+    .footer .footer-left ul li {
+        list-style: none;
+        margin-top: 25px;
+        text-align: justify;
+        font-weight: 300;
+    }
+
+    .main-footer {
+        background: #1f1e1e;
+        color: #ffffff;
+        margin-top: -37px;
+        border-bottom: 1px solid gray;
+    }
+
+    .main-footer .main-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-footer .main-box .main-left {
+        width: 100%;
+        margin: 19px 0px;
+    }
+    .main-footer .main-box .main-right {
+        width: 100%;
+        /* margin: 12em 0em 0em 2em; */
+        margin: 0;
+    }
+
+
 
 
 }
