@@ -4,9 +4,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Da+2:wght@400..800&family=Bungee+Tint&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
-    <title>Grass Fitting</title>
+    <title>Grass Fitting Project</title>
 </head>
 
 <body>
@@ -25,11 +23,14 @@
         <div class="bg-color">
             <div class="container">
                 <div class="header">
-                    <div class="nav-logo">Logo</div>
-                    <div class="nav-contact"><button><i class="fa-solid fa-phone"></i> +91 78595-94954</button></div>
+                    <div class="nav-logo">
+                        <div>logo</div>
+                        <div class="bars" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
+                    </div>
+                    <div class="nav-contact"><a href="tel:+9178895-95585"><i class="fa-solid fa-phone"></i> +91 78595-94954</a></div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container"> 
                 <div class="hero">
                     <div class="hero-left">
                         <h2>Top-Quality <span> Artificial</span><br><span> Grass</span> Installation</h2>
@@ -60,22 +61,32 @@
                             <input type="text" placeholder="Name" required>
                             <input type="email" placeholder="Email" required>
                             <input type="number" placeholder="Mobile No." required>
-                            <select name="Services" id="drop-list">
-                                <option value="">Service 1</option>
-                                <option value="">Service 1</option>
-                                <option value="">Service 1</option>
-                                <option value="">Service 1</option>
-                            </select>
-                            <textarea name="Write Message" id="text-msg"> Write Message</textarea>
+                            <textarea name="Write Message" id="text-msg" placeholder="Write a message"></textarea>
                             <button class="btn">Get a quote</button>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- Slide Menu -->
+             <div class="sidebar">
+            <div id="menu" class="side-menu">
+                <span class="close-btn" id="closeBtn"><i class="fa-solid fa-xmark"></i></span>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#feature">Why Choose Us</a>
+                <a href="#form">Request A Callback</a>
+                <a href="#service">Services</a>
+                <a href="#testimonial">Testimonial</a>
+                <a href="#faq">FAQ's</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Help</a>
+            </div>
+            </div>
+       
     </section>
 
 
+    <!-- this is about section -->
     <section id="about">
         <div class="container">
             <div class="items">
@@ -205,35 +216,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next" style="color: #349156;"></div>
-                    <div class="swiper-button-prev" style="color: #349156;"></div>
+                    <div class="swiper-button-next" style="color: #25cc62; font-size: 10px !important;"></div>
+                    <div class="swiper-button-prev" style="color: #5ed58a; font-size: 10px !important;"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    <!-- this is feature section -->
     <section id="feature">
         <div class="container">
             <h2>Why Choose Us</h2>
@@ -272,7 +263,7 @@
             </div>
         </div>
     </section>
-
+    <!-- This is form section -->
     <section id="form">
         <div class="container">
             <!-- Swiper -->
@@ -328,7 +319,9 @@
 
         </div>
         <div class="container">
+
             <div class="detail">
+                <h2 style="color: #fff;">Request A Call Back</h2>
                 <div class="name">
                     <input type="text" placeholder="Name">
                 </div>
@@ -353,7 +346,7 @@
             spaceBetween: 30,
             centeredSlides: true,
             autoplay: {
-                delay: 2500,
+                delay: 10000,
                 disableOnInteraction: false
             },
             pagination: {
@@ -372,8 +365,44 @@
             }
         });
     </script>
+    <!-- bar icon script -->
+    <script>
+        const menu = document.getElementById('menu');
+        const menuToggle = document.getElementById('menuToggle');
+        const closeBtn = document.getElementById('closeBtn');
 
-     <section id="service">
+        menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('open');
+        });
+
+        closeBtn.addEventListener('click', function () {
+            menu.classList.remove('open');
+        });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- This is service section -->
+    <section id="service">
         <div class="container">
             <h2>Our Services</h2>
             <div class="heading">
@@ -422,6 +451,7 @@
             </div>
         </div>
     </section>
+    <!-- This is testimonial section -->
     <section id="testimonial">
         <div class="container">
             <div class="content-box">
@@ -463,12 +493,13 @@
             </div>
         </div>
     </section>
+    <!-- This is testimonial video section -->
     <section id="video">
         <div class="container">
             <h1>hear from our happy customers</h1>
             <p>hear what our clients have to say: real stories, real stisfaction. testimonials that speaks volumes about
                 our commitment of excellence.</p>
-            <div class="video-test" >
+            <div class="video-test">
 
                 <iframe width="890" height="500" src="https://www.youtube.com/embed/8LSt8_11wbQ?si=UdS_yQA-V62en6so"
                     title="YouTube video player" frameborder="0"
@@ -490,10 +521,11 @@
             </div>
         </div>
     </section>
+    <!-- This is faq section -->
     <section id="faq">
         <div class="container">
             <div class="main">
-                <div class="photo"><img height="500" width="410" src="./assets/images/thinking.jpg" alt="img"></div>
+                <div class="photo"><img height="400" width="310" src="./assets/images/thinking.jpg" alt="img"></div>
                 <div class="faq-container">
                     <h4><b>frequently asked questions</b></h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore ad error assumenda
@@ -532,74 +564,82 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer">
-                <div class="footer-left">
-                    <h3>contact now</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed a fuga adipisci aut veniam. Quaerat
-                        eos sit animi? Eaque, accusantium?</p>
-                    <ul>
-                        <li><i class="fa-solid fa-phone-volume"></i> +91 80034-76543</li>
-                        <li><i class="fa-solid fa-envelope"></i>info@contactus.com</li>
-                        <li><i class="fa-solid fa-location-dot"></i>764A lorem ipsum 370D, 27nd73</li>
-                    </ul>
-                </div>
-                <div class="footer-right">
-                    <form action="#">
-                        <h2>Get A Quoute</h2>
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="number" placeholder="Mobile No." required>
-                        <select name="Services" id="drop-list">
-                            <option value="">Service 1</option>
-                            <option value="">Service 1</option>
-                            <option value="">Service 1</option>
-                            <option value="">Service 1</option>
-                        </select>
-                        <textarea name="Write Message" id="text-msg"> Write Message</textarea>
-                        <button class="btn">Get a quote</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="main-footer">
+    <!-- This is footer section -->
+    <section id="contact">
+        <footer>
             <div class="container">
-                <div class="main-box">
-                    <div class="main-left">
-                        <h2>Logo</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laboriosam vitae
-                            cumque
-                            provident ducimus pariatur necessitatibus voluptates debitis omnis sint quae! Eveniet quam
-                            tempore veritatis debitis tempora dignissimos et molestias Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Voluptas, ducimus!</p>
+                <div class="footer">
+                    <div class="footer-left">
+                        <h3>contact now</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed a fuga adipisci aut veniam.
+                            Quaerat
+                            eos sit animi? Eaque, accusantium?</p>
                         <ul>
-                            <li><i class="fa-brands fa-facebook-f"></i></li>
-                            <li><i class="fa-brands fa-instagram"></i></li>
-                            <li><i class="fa-brands fa-twitter"></i></li>
-                            <li><i class="fa-brands fa-linkedin-in"></i></li>
+                            <li><i class="fa-solid fa-phone-volume"></i> +91 80034-76543</li>
+                            <li><i class="fa-solid fa-envelope"></i>info@contactus.com</li>
+                            <li><i class="fa-solid fa-location-dot"></i>764A lorem ipsum 370D, 27nd73</li>
                         </ul>
                     </div>
-                    <div class="main-right">
-                        <h3>About us</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti tempora nulla
-                            ipsam incidunt reiciendis.</p>
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Services</li>
-                            <li>Why Choose Us</li>
-                            <li>Contact Us</li>
-                        </ul>
+                    <div class="footer-right">
+                        <form action="#">
+                            <h2>Get A Quoute</h2>
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="number" placeholder="Mobile No." required>
+                            <select name="Services" id="drop-list">
+                                <option value="">Service 1</option>
+                                <option value="">Service 1</option>
+                                <option value="">Service 1</option>
+                                <option value="">Service 1</option>
+                            </select>
+                            <textarea name="Write Message" id="text-msg"> Write Message</textarea>
+                            <button class="btn">Get a quote</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; Copyright 2025. Artificial Grass Installation. All Rights Reserved By DGR. </p>
-        </div>
-    </footer> 
+            <div class="main-footer">
+                <div class="container">
+                    <div class="main-box">
+                        <div class="main-left">
+                            <h2>Logo</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laboriosam vitae
+                                cumque
+                                provident ducimus pariatur necessitatibus voluptates debitis omnis sint quae! Eveniet
+                                quam
+                                tempore veritatis debitis tempora dignissimos et molestias Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Voluptas, ducimus!</p>
+                            <ul>
+                                <li><i class="fa-brands fa-facebook-f"></i></li>
+                                <li><i class="fa-brands fa-instagram"></i></li>
+                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                            </ul>
+                        </div>
+                        <div class="main-right">
+                            <h3>About us</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti tempora
+                                nulla
+                                ipsam incidunt reiciendis.</p>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Services</li>
+                                <li>Why Choose Us</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="call-btn" href="tel:+9188373-37293"><i class="fa-solid fa-phone"></i></a>
+                    <a class="watsup-btn" href="https://api.whatsapp.com/send?phone=8053088725"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Copyright 2025. Artificial Grass Installation. All Rights Reserved By DGR. </p>
+            </div>
+        </footer>
+
+    </section>
 </body>
 
 </html>

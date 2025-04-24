@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Kanit", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #bg-image {
@@ -36,10 +39,81 @@
     cursor: pointer;
 }
 
-.header .nav-contact button {
+.side-menu {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    top: 60px;
+    right: -210px;
+    background-color: #1c6d0a;
+    color: white;
+    transition: 0.3s ease;
+    padding-top: 15px;
+    z-index: 1000;
+}
+
+.side-menu a {
+    padding: 15px 25px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.side-menu a:hover {
+    background-color: #3e800d;
+    color: #ffffff;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+.bars, .sidebar{
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    z-index: 999;
+    background-color: #4a9c2e;
+    transform: translateX(90%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.active {
+    transform: translateX(-100%);
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.side-menu.open {
+    right: 0;
+}
+
+/* Optional styling for the header bar icon */
+.bars {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fcfcfc;
+}
+.header .nav-contact {
+    margin-top: 25px;
+}
+
+.header .nav-contact a {
     background: rgb(29 121 85);
-    margin: 15px 0px;
-    border: none;
+    text-decoration: none;
     padding: 10px 15px;
     color: #ffffff;
     font-size: 17px;
@@ -129,13 +203,16 @@
     padding: 20px;
 }
 
-.hero .hero-right form input,
-.hero .hero-right form select {
+.hero .hero-right form input {
     margin: 10px 0px;
     padding: 15px;
     border-radius: 25px;
     outline: none;
     border: 1px solid gray;
+}
+
+.hero .hero-right form input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero .hero-right form textarea {
@@ -159,7 +236,7 @@
 }
 
 #about {
-    margin-top: 200px;
+    margin-top: -50px;
 }
 
 #about .container .items {
@@ -181,11 +258,11 @@
 
 .items .img-2 {
     position: absolute;
-    left: 45%;
+    left: 50%;
     background: #ffffff;
-    padding: 10px;
+    padding: 2px;
     width: 40%;
-    top: 40%;
+    top: 47%;
     border-radius: 30px;
 }
 
@@ -340,25 +417,25 @@
 #form .container .swiper {
     width: 90%;
     height: 100%;
-  }
+}
 
-  #form .container .swiper .swiper-slide {
+#form .container .swiper .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  #form .container .swiper .swiper-slide img {
+#form .container .swiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-  .autoplay-progress {
+.autoplay-progress {
     position: absolute;
     right: 16px;
     bottom: 16px;
@@ -370,9 +447,9 @@
     justify-content: center;
     font-weight: bold;
     color: var(--swiper-theme-color);
-  }
+}
 
-  .autoplay-progress svg {
+.autoplay-progress svg {
     --progress: 0;
     position: absolute;
     left: 0;
@@ -386,7 +463,7 @@
     stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
-  }
+}
 
 .box-content {
     color: #ffffff;
@@ -565,6 +642,7 @@
     background-image: linear-gradient(rgb(6 105 17), rgb(29 121 85));
     margin: 40px 0px;
 }
+
 .video-test {
     position: relative;
 }
@@ -814,12 +892,12 @@ footer {
     margin: 20px 5px;
     color: #fff;
     background: #307133;
-    padding: 0px;
+    padding-top: 10px;
     font-size: 20px;
     height: 30px;
     text-align: center;
     border-radius: 50%;
-    width: 30px;
+    width: 40px;
     cursor: pointer;
 }
 
@@ -858,4 +936,35 @@ footer {
     color: #c5c2c2;
     padding: 10px 0px;
     font-size: 12px;
+}
+
+.watsup-btn {
+    position: fixed;
+    bottom: 22px;
+    right: 30px;
+    z-index: 999;
+}
+
+.watsup-btn i {
+    background: green;
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 23px;
+}
+
+.call-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    z-index: 999;
+}
+
+.call-btn i {
+    background: rgb(51, 100, 169);
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 20px;
+
 }
