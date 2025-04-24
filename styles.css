@@ -40,13 +40,12 @@ html {
 }
 
 .side-menu {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
     height: 400px;
     width: 250px;
     position: absolute;
     top: 60px;
-    right: -230px;
+    right: -270px;
     background-color: #1c6d0a;
     color: white;
     transition: 0.3s ease;
