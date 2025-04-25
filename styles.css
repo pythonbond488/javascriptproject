@@ -940,7 +940,7 @@ footer {
 .watsup-btn {
     position: fixed;
     bottom: 22px;
-    right: 30px;
+    left: 16px;
     z-index: 999;
 }
 
@@ -955,7 +955,7 @@ footer {
 .call-btn {
     position: fixed;
     bottom: 80px;
-    right: 30px;
+    left: 16px;
     z-index: 999;
 }
 
