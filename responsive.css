@@ -1,11 +1,11 @@
 @media (max-width: 480px) {
     #bg-image {
-        height: 1000px;
+        height: 1220px;
         margin: 0 !important;
     }
 
     #bg-image .bg-color {
-        height: 1000px;
+        height: 1220px;
         margin-bottom: 50px;
 
     }
@@ -127,7 +127,8 @@
 
     textarea {
         height: 50px;
-        width: 100%;
+        width: 90%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         /* Set a specific height for the textarea */
     }
 
@@ -137,7 +138,8 @@
     }
 
     p {
-        font-size: 0.9em !important;
+        font-size: 16px !important;
+        margin: 12px;
         /* Adjust paragraph size for smaller screens */
     }
 
@@ -325,15 +327,16 @@
 
     .content-box .left img {
         background: rgb(56 155 116);
-        border-radius: 40px;
-        width: 80%;
-        padding: 20px 0px 20px 0px;
+        border-radius: 50%;
+        height: 150px;
+        padding: 7px 0px 7px 0px;
+        width: 150px;
     }
 
     .content-box .left,
     .content-box .right {
         position: relative;
-        margin: 20px 0px !important;
+        margin: 0px 0px !important;
         padding: 0 !important;
     }
 
@@ -382,9 +385,6 @@
         padding: 0 !important;
     }
 
-    .footer .footer-right {
-        display: none;
-    }
 
     .container .footer .footer-left {
         width: 100% !important;
@@ -419,8 +419,6 @@
         /* margin: 12em 0em 0em 2em; */
         margin: 0;
     }
-
-
 
 
 }
