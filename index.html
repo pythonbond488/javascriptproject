@@ -18,19 +18,19 @@
 </head>
 
 <body>
-
-    <section id="bg-image">
-        <div class="bg-color">
-            <div class="container">
-                <div class="header">
-                    <div class="nav-logo">
-                        <div>logo</div>
-                        <div class="bars" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
-                    </div>
-                    <div class="nav-contact"><a href="tel:+9178895-95585"><i class="fa-solid fa-phone"></i> +91
-                            78595-94954</a></div>
-                </div>
+    <section id="container">
+        <div class="header">
+            <div class="nav-logo">
+                <div>logo</div>
+                <div class="bars" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
             </div>
+            <div class="nav-contact"><a href="tel:+9178895-95585"><i class="fa-solid fa-phone"></i> +91
+                    78595-94954</a></div>
+        </div>
+    </section>
+    <section id="bg-image">
+
+        <div class="bg-color">
             <div class="container">
                 <div class="hero">
                     <div class="hero-left">
@@ -697,24 +697,26 @@
     <!-- faq question answer script -->
     <script>
         const items = document.querySelectorAll('.faq-item');
-      
+
         items.forEach(item => {
-          item.addEventListener('click', () => {
-            item.classList.toggle('active');
-          });
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
         });
-      </script>
+    </script>
     <section id="enqiry">
-        <div class="mid">
-            <div class="footer-mid">
-                <form action="#">
-                    <h2>Get A Quoute</h2>
-                    <input type="text" placeholder="Name *" required>
-                    <input type="email" placeholder="Email(Optional)" required>
-                    <input type="number" placeholder="Mobile No. *" required>
-                    <textarea id="text-msg"> Write Message(Optional)</textarea>
-                    <button class="btn">Get a Quote</button>
-                </form>
+        <div class="container">
+            <div class="mid">
+                <div class="footer-mid">
+                    <form action="#">
+                        <h2>Get A Quoute</h2>
+                        <input type="text" placeholder="Name *" required>
+                        <input type="email" placeholder="Email(Optional)" required>
+                        <input type="number" placeholder="Mobile No. *" required>
+                        <textarea id="text-msg"> Write Message(Optional)</textarea>
+                        <button class="btn">Get a Quote</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -730,8 +732,7 @@
                             eos sit animi? Eaque, accusantium?</p>
                         <ul>
                             <li><i class="fa-solid fa-phone-volume"></i> +91 80034-76543</li>
-                            <li><i class="fa-solid fa-envelope"></i>info@contactus.com</li>
-                            <li><i class="fa-solid fa-location-dot"></i>764A lorem ipsum 370D, 27nd73</li>
+
                         </ul>
                     </div>
 

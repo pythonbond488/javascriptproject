@@ -1,11 +1,11 @@
 @media (max-width: 480px) {
     #bg-image {
-        height: 1220px;
+        height: 1066px;
         margin: 0 !important;
     }
 
     #bg-image .bg-color {
-        height: 1220px;
+        height: 1066px;
         margin-bottom: 50px;
 
     }
@@ -145,7 +145,7 @@
 
     /* this is image and carousel section.....! */
     #about {
-        margin-top: 60px;
+        margin-top: 25px;
     }
 
     .items {

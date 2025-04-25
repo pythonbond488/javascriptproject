@@ -26,12 +26,21 @@ html {
     margin: auto;
 }
 
-.container .header {
+#container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#container .header {
+    background-color: #247711;
+
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
-    padding: 20px 0px;
+
 }
 
 .header .nav-logo {
@@ -68,7 +77,9 @@ html {
 body.menu-open {
     overflow: hidden;
 }
-.bars, .sidebar{
+
+.bars,
+.sidebar {
     display: none;
 }
 
@@ -106,8 +117,9 @@ body.menu-open {
     font-size: 24px;
     color: #fcfcfc;
 }
+
 .header .nav-contact {
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 
 .header .nav-contact a {
@@ -157,21 +169,23 @@ body.menu-open {
 }
 
 .hero .hero-left span {
-    color: rgb(47 143 48);
+    color: rgb(17 255 20);
+    ;
 }
 
 .hero .hero-left p {
     font-size: 15px;
     font-weight: 300
 }
-.hero-left .btn-left{border: none;
+
+.hero-left .btn-left {
+    border: none;
     cursor: pointer;
     border-radius: 25px;
     background-color: rgb(29 121 85);
     padding: 10px 20px;
     color: #ffffff;
     margin: 30px 20px 0px 0px
-
 }
 
 .hero .hero-left .btns .btn-left {
@@ -529,6 +543,7 @@ body.menu-open {
 
 .banner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgb(190, 210, 203);
     padding: 20px;
@@ -538,7 +553,8 @@ body.menu-open {
 .banner .banner1 {
     height: 550px;
     padding: 20px;
-    width: 25%;
+    width: 28%;
+    margin: 10px;
     border-radius: 20px;
     text-align: center;
     background: rgb(255, 255, 255);
@@ -574,69 +590,76 @@ body.menu-open {
     display: flex;
     gap: 40px;
 }
+
 .content-swiper {
     position: relative;
     width: 100%;
     height: auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background: white;
-  }
+}
 
-  .content-wrapper {
+.content-wrapper {
     display: flex;
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
-  }
+}
 
-  .content-slide {
+.content-slide {
     min-width: 100%;
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-  }
+}
 
-  .slide-image {
+.slide-image {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 10px;
-  }
+}
 
-  .content-slide h2 {
+.content-slide h2 {
     margin: 0 0 10px;
     font-size: 1.5rem;
-  }
+}
 
-  .content-slide p {
+.content-slide p {
     margin: 0;
     font-size: 1rem;
     color: #333;
-  }
+}
 
-  button.swiper-prev, button.swiper-next {
+button.swiper-prev,
+button.swiper-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     border: none;
     padding: 6px 10px;
     font-size: 14px;
     cursor: pointer;
     z-index: 1;
-  }
+}
 
-  button.swiper-prev { left: 10px; }
-  button.swiper-next { right: 10px; }
+button.swiper-prev {
+    left: 10px;
+}
 
-  button:hover {
-    background-color: rgba(0,0,0,0.6);
-  }
+button.swiper-next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
 #video {
     background-image: linear-gradient(rgb(6 105 17), rgb(29 121 85));
@@ -732,38 +755,40 @@ body.menu-open {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
     cursor: pointer;
-  }
+}
 
-  .faq-question-container {
+.faq-question-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .faq-question {
+.faq-question {
     font-weight: bold;
-  }
+}
 
-  .faq-icon {
+.faq-icon {
     font-size: 20px;
     cursor: pointer;
-  }
+}
 
-  .faq-answer {
+.faq-answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
     padding-left: 20px;
     margin-top: 5px;
-  }
+}
 
-  .faq-item.active .faq-answer {
-    max-height: 200px; /* Adjust as needed */
-  }
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    /* Adjust as needed */
+}
 
-  .faq-item.active .faq-icon {
-    transform: rotate(45deg); /* Rotate the + to a - */
-  }
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+    /* Rotate the + to a - */
+}
 
 .faq-container h4 {
     font-size: 35px;
