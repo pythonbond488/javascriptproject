@@ -27,6 +27,7 @@ html {
 }
 
 #container {
+    height: 30px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -35,7 +36,7 @@ html {
 #container .header {
     background-color: #247711;
 
-    padding: 10px 20px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,10 +117,6 @@ body.menu-open {
     cursor: pointer;
     font-size: 24px;
     color: #fcfcfc;
-}
-
-.header .nav-contact {
-    /* margin-top: 25px; */
 }
 
 .header .nav-contact a {
@@ -907,7 +904,7 @@ footer {
 }
 
 .main-footer .main-box .main-left {
-    width: 40%;
+    width: 50%;
     margin: 50px 10px;
 }
 
@@ -932,8 +929,8 @@ footer {
 }
 
 .main-footer .main-box .main-right {
-    width: 60%;
-    margin: 12em 0em 0em 2em;
+    width: 50%;
+    margin: 65px 10px;
 }
 
 .main-box .main-right h3 {
