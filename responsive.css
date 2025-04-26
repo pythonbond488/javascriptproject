@@ -1,7 +1,7 @@
 @media (max-width: 480px) {
     #bg-image {
         height: 1066px;
-        margin: 0 !important;
+        margin: -7px !important;
     }
 
     #bg-image .bg-color {
@@ -26,8 +26,7 @@
     }
 
     .nav-logo {
-        margin-bottom: 10px;
-        margin-bottom: 10px;
+        margin-bottom: -30px;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -42,6 +41,7 @@
 
       .bars {
         font-size: 24px;
+        margin-top: 10px;
       }
 
       .nav-contact button {
