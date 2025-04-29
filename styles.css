@@ -757,44 +757,6 @@ button:hover {
     margin: 0px 10px;
     color: #333;
 }
-.slider {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-  }
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  .slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-  }
-  iframe {
-    width: 100%;
-    height: 70vh;
-    border: none;
-  }
-  .navigation {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    padding: 0 10px;
-  }
-  .nav-btn {
-    background: rgba(255,255,255,0.8);
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-  }
 
 #faq {
     background-color: #d0cdcd;
@@ -1015,7 +977,7 @@ footer {
 
 .main-box .main-right ul li {
     list-style: none;
-    display: inline-block;
+    display: block;
     margin: 30px 20px 0px 0px;
     font-size: 15px;
     cursor: pointer;
@@ -1038,7 +1000,7 @@ footer {
 .watsup-btn {
     position: fixed;
     bottom: 22px;
-    left: 16px;
+    right: 16px;
     z-index: 999;
 }
 
@@ -1053,7 +1015,7 @@ footer {
 .call-btn {
     position: fixed;
     bottom: 80px;
-    left: 16px;
+    right: 16px;
     z-index: 999;
 }
 
@@ -1065,3 +1027,53 @@ footer {
     font-size: 20px;
 
 }
+.slider-container {
+    width: 325px;
+    height: 640px;
+    overflow: hidden;
+    background: #222;
+    position: relative;
+    border-radius: 20px;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    min-width: 360px;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    background: transparent;
+    margin-right: 10px;
+  }
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+    background: #2e811c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+  }
+  .btn:hover {
+    background: #bdb9b9;
+  }
+
+
+
+
+
+
+
+
